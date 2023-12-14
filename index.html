@@ -1,14 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/burger.css">
     <title>TITNID</title>
 </head>
-    <body>
-        <div class="container">
+
+<body>
+    <header class="header white_bg shadow">
+        <div class="header__container d-flex width_full flex-ai__center flex-jc__sp-btw">
+            <a href="index.html" class="logo__link header__logo">
+                <img src="img/logo.png" alt="" class="logo__img">
+            </a>
+            <div class="navigation d-flex">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="nav__links d-flex">
+                    <li class="nav__item mr_20"><a href="about.html" class="nav__link">Обо мне</a></li>
+                    <li class="nav__item mr_20"><a href="#works" class="nav__link">Портфолио</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="intro light_section p_center">
+        <div class="intro__container width_full d-flex flex-column ">
+            <h1 class="title text-a__center mb_50">Веб-дизайнер и иллюстратор</h1>
+            <div class="intro__items width_full d-flex flex-ai__center flex-jc__sp-btw">
+                <img src="#" class="intro__img rounded_5">
+                <p class="intro__text text-a__jtf">Приветствую тебя, дорогой клиент! Я TITNID – Дизайнер с талантом и
+                    страстью к
+                    инновациям. Работаю в области графического, веб и UX/UI дизайна, а также являюсь иллюстратором, что
+                    позволяет мне находить оптимальные решения для самых сложных задач.</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills white_bg p_center">
+        <div class="skills__container d-flex flex-column flex-ai__center">
+            <h2 class="subtitle text-a__center mb_50">Навыки, которыми я обладаю</h2>
+            <p class="skills__text text-a__jtf mb_50">Я обладаю умением мыслить нестандартно и предлагать оригинальные
+                идеи для запросов
+                своих клиентов. Я постоянно слежу за новыми тенденциями в дизайне, что позволяет мне создавать стильные
+                и современные сайты, элементы фирменного стиля и иллюстрации. Среди инструментов, которыми я пользуюсь:
+                Adobe Photoshop, Adobe Illustrator, Adobe XD, Adobe InDesign, Procreate
+            </p>
+            <div class="skills__items">
+                <img src="#" alt="" class="skills__item rounded_5">
+            </div>
+        </div>
+    </section>
+    <section class="works dark_section p_center" id="works">
+        <div class="works__container d-flex flex-column flex-ai__center">
+            <h2 class="subtitle text-a_center mb_50">Мои работы</h2>
+            <div class="works__items mb_50 width_full d-flex flex-ai__center flex-jc__sp-btw">
+                <img src="#" class="works__item rounded_5">
+                <img src="#" class="works__item rounded_5">
+                <img src="#" class="works__item rounded_5">
+                <img src="#" class="works__item rounded_5">
+            </div>
+            <p class="works__text text-a__center mb_30">Для ознакомления с остальными работами по отдельным категориям
+                вы можете нажать на
+                кнопки
+            </p>
+            <div class="buttons__container width_full d-flex flex-jc__sp-arnd flex-ai__center">
+                <a href="web-design.html" class="btn__item rounded_10">Веб-дизайн</a>
+                <a href="web-design.html" class="btn__item rounded_10">Иллюстрации</a>
+            </div>
+        </div>
+    </section>
+    <section class="view-contacts white_bg p_center">
+        <div class="view-contacts__container width_full d-flex flex-ai__center flex-jc__center">
+            <p class="view-contacts__text text-a__center">Благодарю, что заглянули на мой сайт! Для связи со мной и
+                заявки на заказ вы
+                можете спуститься в нижний блок с контактами
+            </p>
+        </div>
+    </section>
+    <footer class="footer grey_bg">
+        <div class="footer__container width_full d-flex flex-ai__center flex-jc__sp-btw">
+            <div class="footer__item-logo">
+                <a href="index.html" class="logo__link footer__logo">
+                    <img src="img/logo.png" alt="" class="logo__img">
+                </a>
+            </div>
+            <div class="footer___items width_full d-flex flex-ai__center flex-jc__sp-btw">
+                <div class="footer__item d-flex flex-ai__center flex-jc__center">
+                    <a href="" class="nav__link">Портфолио</a>
+                </div>
+                <div class="footer__item contacts d-flex flex-ai__center flex-jc__sp-btw flex-column">
+                    <p class="contact__item mb_30">номер телефона</p>
+                    <div class="social__items">
+                        <a href="#" class="social__item mr_20">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 50"
+                                fill="none">
+                                <path
+                                    d="M29.2594 0H15.5283C2.98122 0 0 3.3325 0 17.3175V32.6575C0 46.6675 2.96108 50 15.5037 50H29.237C41.7796 50 44.7631 46.6925 44.7631 32.6825V17.345C44.7631 3.33 41.802 0 29.2594 0ZM36.1372 35.675H32.8718C31.6363 35.675 31.2648 34.5575 29.049 32.0825C27.1152 30 26.2983 29.74 25.8082 29.74C25.1322 29.74 24.9465 29.9475 24.9465 30.99V34.27C24.9465 35.1575 24.6891 35.6775 22.6143 35.6775C20.6007 35.5264 18.6481 34.843 16.9173 33.6838C15.1865 32.5246 13.727 30.9227 12.659 29.01C10.1235 25.485 8.35937 21.3478 7.50677 16.9275C7.50677 16.38 7.69253 15.885 8.62584 15.885H11.8913C12.7306 15.885 13.0328 16.3025 13.3595 17.265C14.9442 22.475 17.6478 27.005 18.7445 27.005C19.1653 27.005 19.3488 26.7975 19.3488 25.625V20.26C19.2101 17.8125 18.0462 17.605 18.0462 16.72C18.0612 16.4866 18.1569 16.2688 18.3132 16.1129C18.4695 15.9571 18.674 15.8753 18.8833 15.885H24.0132C24.7137 15.885 24.9465 16.275 24.9465 17.2125V24.4525C24.9465 25.235 25.2486 25.495 25.459 25.495C25.8798 25.495 26.2043 25.235 26.9742 24.375C28.6279 22.1224 29.979 19.6127 30.985 16.925C31.0878 16.6022 31.2824 16.3258 31.539 16.138C31.7956 15.9502 32.1002 15.8614 32.4062 15.885H35.6717C36.6498 15.885 36.8579 16.4325 36.6498 17.2125C35.4624 20.1836 33.9932 23.0039 32.2675 25.625C31.9161 26.225 31.7751 26.5375 32.2675 27.24C32.592 27.7875 33.7357 28.855 34.5056 29.87C35.6245 31.1166 36.5536 32.5589 37.2563 34.14C37.5361 35.155 37.0683 35.675 36.1372 35.675Z"
+                                    fill="url(#paint0_linear_34_307)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_34_307" x1="22.3815" y1="0" x2="22.3815" y2="50"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9F5CA1" />
+                                        <stop offset="1" stop-color="#351334" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item mr_20">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                fill="none">
+                                <path
+                                    d="M25 0C18.3711 0 12.0078 2.63555 7.32422 7.32227C2.63579 12.0108 0.00129871 18.3695 0 25C0 31.6277 2.63672 37.991 7.32422 42.6777C12.0078 47.3645 18.3711 50 25 50C31.6289 50 37.9922 47.3645 42.6758 42.6777C47.3633 37.991 50 31.6277 50 25C50 18.3723 47.3633 12.009 42.6758 7.32227C37.9922 2.63555 31.6289 0 25 0Z"
+                                    fill="url(#paint0_linear_34_209)" />
+                                <path
+                                    d="M11.3164 24.7359C18.6055 21.5609 23.4648 19.4676 25.8945 18.4563C32.8398 15.5684 34.2812 15.0668 35.2227 15.0498C35.4297 15.0465 35.8906 15.0977 36.1914 15.3408C36.4414 15.5459 36.5117 15.8232 36.5469 16.018C36.5781 16.2125 36.6211 16.6559 36.5859 17.002C36.2109 20.9551 34.582 30.548 33.7539 34.9758C33.4063 36.8492 32.7148 37.4773 32.0469 37.5387C30.5938 37.6723 29.4922 36.5793 28.0859 35.6578C25.8867 34.2152 24.6445 33.3176 22.5078 31.9102C20.0391 30.2836 21.6406 29.3895 23.0469 27.9285C23.4141 27.5461 29.8125 21.7277 29.9336 21.2C29.9492 21.134 29.9648 20.8879 29.8164 20.7582C29.6719 20.6281 29.457 20.6727 29.3008 20.7078C29.0781 20.7578 25.5664 23.0813 18.7539 27.6777C17.7578 28.3629 16.8555 28.6969 16.043 28.6793C15.1523 28.6602 13.4336 28.1746 12.1563 27.7598C10.5938 27.2508 9.34766 26.9816 9.45703 26.1172C9.51172 25.6672 10.1328 25.2066 11.3164 24.7359Z"
+                                    fill="white" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_34_209" x1="25" y1="0" x2="25" y2="50"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9F5CA1" />
+                                        <stop offset="1" stop-color="#351334" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                fill="none">
+                                <path
+                                    d="M14.5 0H35.5C43.5 0 50 6.5 50 14.5V35.5C50 39.3456 48.4723 43.0338 45.753 45.753C43.0338 48.4723 39.3456 50 35.5 50H14.5C6.5 50 0 43.5 0 35.5V14.5C0 10.6544 1.52767 6.96623 4.24695 4.24695C6.96623 1.52767 10.6544 0 14.5 0ZM14 5C11.6131 5 9.32387 5.94821 7.63604 7.63604C5.94821 9.32387 5 11.6131 5 14V36C5 40.975 9.025 45 14 45H36C38.3869 45 40.6761 44.0518 42.364 42.364C44.0518 40.6761 45 38.3869 45 36V14C45 9.025 40.975 5 36 5H14ZM38.125 8.75C38.9538 8.75 39.7487 9.07924 40.3347 9.66529C40.9208 10.2513 41.25 11.0462 41.25 11.875C41.25 12.7038 40.9208 13.4987 40.3347 14.0847C39.7487 14.6708 38.9538 15 38.125 15C37.2962 15 36.5013 14.6708 35.9153 14.0847C35.3292 13.4987 35 12.7038 35 11.875C35 11.0462 35.3292 10.2513 35.9153 9.66529C36.5013 9.07924 37.2962 8.75 38.125 8.75ZM25 12.5C28.3152 12.5 31.4946 13.817 33.8388 16.1612C36.183 18.5054 37.5 21.6848 37.5 25C37.5 28.3152 36.183 31.4946 33.8388 33.8388C31.4946 36.183 28.3152 37.5 25 37.5C21.6848 37.5 18.5054 36.183 16.1612 33.8388C13.817 31.4946 12.5 28.3152 12.5 25C12.5 21.6848 13.817 18.5054 16.1612 16.1612C18.5054 13.817 21.6848 12.5 25 12.5ZM25 17.5C23.0109 17.5 21.1032 18.2902 19.6967 19.6967C18.2902 21.1032 17.5 23.0109 17.5 25C17.5 26.9891 18.2902 28.8968 19.6967 30.3033C21.1032 31.7098 23.0109 32.5 25 32.5C26.9891 32.5 28.8968 31.7098 30.3033 30.3033C31.7098 28.8968 32.5 26.9891 32.5 25C32.5 23.0109 31.7098 21.1032 30.3033 19.6967C28.8968 18.2902 26.9891 17.5 25 17.5Z"
+                                    fill="url(#paint0_linear_34_208)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_34_208" x1="25" y1="0" x2="25" y2="50"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9F5CA1" />
+                                        <stop offset="1" stop-color="#351334" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="container">
             <header class="header">
                     <a href="index.html" class="logo">
                         <img src="img/logo.svg" alt="logo">
@@ -30,7 +170,8 @@
                 <h1>Тут главная будет</h1>
             </main>
             <footer>
-            </footer>
-        </div>
-    </body>
+            </footer> -->
+    <!-- </div> -->
+</body>
+
 </html>
