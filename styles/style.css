@@ -125,6 +125,10 @@ h6 {
     margin-right: 20px;
 }
 
+.mb_20 {
+    margin-bottom: 20px;
+}
+
 .mb_30 {
     margin-bottom: 30px;
 }
@@ -136,12 +140,15 @@ h6 {
 a {
     text-decoration: none;
 }
-.rounded_5{
+
+.rounded_5 {
     border-radius: 5px;
 }
-.rounded_10{
+
+.rounded_10 {
     border-radius: 10px;
 }
+
 .shadow {
     box-shadow: 0px 4px 10px 0px rgba(53, 19, 52, 0.30);
 }
@@ -149,7 +156,7 @@ a {
 /* ===================================== */
 header,
 footer {
-    padding: 20px 16.7%; 
+    padding: 20px 16.7%;
 }
 
 .nav__links {
@@ -158,22 +165,26 @@ footer {
 
 .nav__link {
     color: var(--text-color);
+    position: relative;
 }
 
 .logo__img {
     height: 160px;
     width: auto;
 }
+
 .footer___items,
 .intro__text {
     flex-basis: 50%;
 }
 
 .intro__img {
-    width: 280px;
+    width: 100%;
     height: 280px;
     flex-basis: 30%;
 }
+
+.works__text,
 .view-contacts__text,
 .skills__items,
 .skills__text {
@@ -181,7 +192,12 @@ footer {
 }
 
 .skills__items {
+    width: 80%;
     height: 300px;
+}
+
+.works__items {
+    flex-wrap: wrap;
 }
 
 .works__item {
@@ -195,31 +211,44 @@ footer {
     padding: 30px 7%;
     font-size: 20px;
 }
+
 .footer__item {
     flex-basis: 48%;
 }
-.social__item > svg {
+
+.social__item>svg {
     width: 50px;
     height: 50px;
 }
 
-.menu__box {
-    padding: 0;
-    display: flex;
-    list-style: none;
-    margin-right: 10px;
-    flex-wrap: wrap;
+.nav__link::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    content: "";
+    transition: width 0.3s ease-out;
 }
 
-.menu__item {
-    text-decoration: none;
-    color: #333;
-    margin: 10px;
-    font-weight: 600;
-    transition: .4s;
+a:hover:after,
+a:focus:after {
+    width: 100%;
 }
 
-.menu__item:hover {
-    transition: .4s;
-    opacity: 0.6;
+.nav__link::before {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+a:hover::before,
+a:focus::before {
+    width: 100%;
 }

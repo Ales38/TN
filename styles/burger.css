@@ -4,25 +4,25 @@
 }
 
 @media (max-width: 550px) {
-        #menu__toggle {
+    #menu__toggle {
         opacity: 0;
     }
 
     .menu__btn {
         display: flex;
         align-items: center;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 26px;
-        height: 26px;
+        position: absolute;
+        top: 60px;
+        right: 90px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         z-index: 50;
     }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
         display: block;
         position: absolute;
         width: 100%;
@@ -31,17 +31,18 @@
         outline: 1px solid #616161;
         transition-duration: .3s;
     }
-    .menu__btn > span::before {
+
+    .menu__btn>span::before {
         content: '';
         top: -8px;
     }
 
-    .menu__btn > span::after {
+    .menu__btn>span::after {
         content: '';
         top: 8px;
     }
 
-    .menu__box {
+    .nav__links {
         display: block;
         position: fixed;
         visibility: hidden;
@@ -57,7 +58,7 @@
         transition-duration: .3s;
     }
 
-    .menu__item {
+    .nav__item {
         display: block;
         padding: 12px 24px;
         font-size: 20px;
@@ -66,28 +67,45 @@
         transition-duration: .3s;
     }
 
-    .menu__item:hover {
-        background-color: #CFD8DC;
-    }
 
-    #menu__toggle:checked ~ .menu__btn > span {
+
+    #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
     }
 
-    #menu__toggle:checked ~ .menu__btn > span::before {
+    #menu__toggle:checked~.menu__btn>span::before {
         top: 0;
         transform: rotate(0);
     }
 
-    #menu__toggle:checked ~ .menu__btn > span::after {
+
+    #menu__toggle:checked~.menu__btn>span::after {
         top: 0;
         transform: rotate(90deg);
     }
 
-    #menu__toggle:checked ~ .menu__box {
+    #menu__toggle:checked~.menu__btn {
+        top: 40px;
+        right: 40px;
+    }
+
+
+    #menu__toggle:checked~.nav__links {
         visibility: visible;
         background-color: #d5b4d6;
         right: 0;
         z-index: 49;
+    }
+}
+
+@media all and (max-width: 428px) {
+    .menu__btn {
+        right: 70px;
+    }
+}
+
+@media all and (max-width: 376px) {
+    .menu__btn {
+        right: 25px;
     }
 }
