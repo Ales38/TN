@@ -109,6 +109,10 @@ h6 {
     justify-content: space-between;
 }
 
+.flex-fd__row-rev {
+    flex-direction: row-reverse;
+}
+
 .flex-jc__sp-arnd {
     justify-content: space-around;
 }
