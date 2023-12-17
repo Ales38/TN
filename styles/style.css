@@ -167,6 +167,7 @@ a {
 
 .shadow {
     box-shadow: 0px 4px 10px 0px rgba(53, 19, 52, 0.30);
+    z-index: 50;
 }
 
 /* ===================================== */
@@ -239,13 +240,27 @@ footer {
     height: 300px;
 }
 
+.pointer {
+    cursor: pointer;
+    transition: 0.5s;
+}
 
+.pointer:hover {
+    opacity: 0.6;
+    transition: 0.5s;
+}
 
 .btn__item {
     color: var(--bg-color);
     background-color: var(--accent-color);
     padding: 30px 7%;
     font-size: 20px;
+    transition: 0.3s;
+}
+
+.btn__item:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .btn__item_dark {
@@ -253,7 +268,14 @@ footer {
     background-color: var(--text-color);
     padding: 30px 7%;
     font-size: 20px;
+    transition: 0.3s;
 }
+
+.btn__item_dark:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
 
 .footer__item {
     flex-basis: 48%;
@@ -262,6 +284,12 @@ footer {
 .social__item>svg {
     width: 50px;
     height: 50px;
+    transition: 0.3s;
+}
+
+.social__item>svg:hover {
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
 .nav__link::after {
