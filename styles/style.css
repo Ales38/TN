@@ -197,12 +197,16 @@ footer {
 .footer___items,
 .intro__text {
     flex-basis: 50%;
+    margin-right: 50px;
 }
 
 .intro__img {
-    width: 100%;
-    height: 500px;
+    /*width: 100%;
+    height: 500px;*/
+    width: 500px;
+    height: 100%;
     flex-basis: 40%;
+    margin-right: 50px;
 }
 
 .about__img {
@@ -213,14 +217,12 @@ footer {
 
 .view__img {
     width: 100%;
-    height: 680px;
     flex-basis: 80%;
 }
 
 .works__text,
 .view-contacts__text,
-.skills__items,
-.skills__text {
+.skills__items {
     width: 70%;
 }
 
@@ -234,7 +236,7 @@ footer {
 }
 
 .works__item {
-    width: 300px;
+    width: max-content;
     height: 300px;
 }
 
@@ -243,6 +245,13 @@ footer {
 .btn__item {
     color: var(--bg-color);
     background-color: var(--accent-color);
+    padding: 30px 7%;
+    font-size: 20px;
+}
+
+.btn__item_dark {
+    color: var(--bg-color);
+    background-color: var(--text-color);
     padding: 30px 7%;
     font-size: 20px;
 }
@@ -286,4 +295,40 @@ a:focus:after {
 a:hover::before,
 a:focus::before {
     width: 100%;
+}
+
+.works__item_mob {
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.works__item_frame {
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.works__item_night {
+    width: 500px;
+    height: max-content;
+}
+
+@media all and (max-width: 1640px) {
+    .works__item_night {
+        width: 450px;
+        height: max-content;
+    }
+}
+
+@media all and (max-width: 1450px) {
+    .works__item_night {
+        width: 350px;
+        height: max-content;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .works__item_night {
+        width: 250px;
+        height: max-content;
+    }
 }
